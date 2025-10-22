@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekap Keterlambatan | SMPN 5 Banda Aceh</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rekap Keterlambatan</h1>
+    <canvas id="chartTerlambat" style="margin-top:20px;"></canvas>
+    <p class="footer">© 2025 SMP Negeri 5 Banda Aceh</p>
+  </div>
+  <script>
+  // Contoh data dummy untuk demo grafik
+  const ctx = document.getElementById('chartTerlambat');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun'],
+      datasets: [{
+        label: 'Jumlah Keterlambatan',
+        data: [4, 7, 3, 8, 5, 6],
+        borderWidth: 1,
+        backgroundColor: '#004080'
+      }]
+    },
+    options: {
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+  </script>
+</body>
+</html>
