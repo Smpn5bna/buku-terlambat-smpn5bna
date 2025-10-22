@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzWmEpLxPb2CXShAWTJlHnTBbEKE73QD9qog_rPPeV-ewQ1PdAWxyhN0CVfmY_kUbKbww/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbxXzaSjXzn2KLDVb6eHI46r4_AJzbY6uDEJaA5my0yfaWtA4OU3VD6VC69gvUjtm7Aubg/exec";
 
 async function loadSiswa() {
   const res = await fetch(API_URL);
